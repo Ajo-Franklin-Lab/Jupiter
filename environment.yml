@@ -1,0 +1,13 @@
+# To set up a development environment using conda run:
+#
+#   $ conda env create -f environment.yml  # `mamba` works too for this command
+#   $ conda activate jupiter-dev
+#   $ pip install -e .
+#
+name: jupiter-dev
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9.0  #need to pin to avoid issues with builds
+  - setuptools=65.5.0
